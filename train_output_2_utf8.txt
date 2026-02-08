@@ -1,0 +1,102 @@
+﻿./.venv/Scripts/python.exe : 
+2026-02-07 21:49:54.052188: 
+I tensorflow/core/util/port.c
+c:153] oneDNN custom 
+operations are on. You may 
+see slightly different 
+numerical results due to 
+floating-point round-off 
+errors from different 
+computation orders. To turn 
+them off, set the 
+environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+At line:1 char:1
++ ./.venv/Scripts/python.exe 
+src/train.py > 
+train_output_2.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (2026-02  
+  -07 21:4...ONEDNN_OPTS=0   
+ `.:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+2026-02-07 21:49:56.889297: 
+I tensorflow/core/util/port.c
+c:153] oneDNN custom 
+operations are on. You may 
+see slightly different 
+numerical results due to 
+floating-point round-off 
+errors from different 
+computation orders. To turn 
+them off, set the 
+environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+D:\CAPSTONE\Capstone code\Cod
+e\.venv\Lib\site-packages\hug
+gingface_hub\file_download.py
+:942: FutureWarning: 
+`resume_download` is 
+deprecated and will be 
+removed in version 1.0.0. 
+Downloads always resume when 
+possible. If you want to 
+force a new download, use 
+`force_download=True`.
+  warnings.warn(
+2026-02-07 21:50:01.452116: 
+I tensorflow/core/platform/cp
+u_feature_guard.cc:210] This 
+TensorFlow binary is 
+optimized to use available 
+CPU instructions in 
+performance-critical 
+operations.
+To enable the following 
+instructions: SSE3 SSE4.1 
+SSE4.2 AVX AVX2 FMA, in 
+other operations, rebuild 
+TensorFlow with the 
+appropriate compiler flags.
+Traceback (most recent call 
+last):
+  File "D:\CAPSTONE\Capstone 
+code\Code\src\train.py", 
+line 80, in <module>
+Starting PD-Genomics Model Training Pipeline...
+Generating synthetic training dataset...
+Building TreatmentRecommender model architecture...
+Propagating through GNN and Fusion layers...
+Initial Loss: 0.6435
+Saving model weights to 'models/checkpoints/'...
+    train_model()
+  File "D:\CAPSTONE\Capstone 
+code\Code\src\train.py", 
+line 74, in train_model
+    model.save_weights('model
+s/checkpoints/pd_recommender_
+weights.h5')
+  File "D:\CAPSTONE\Capstone 
+code\Code\.venv\Lib\site-pack
+ages\keras\src\utils\tracebac
+k_utils.py", line 122, in 
+error_handler
+    raise e.with_traceback(fi
+ltered_tb) from None
+  File "D:\CAPSTONE\Capstone 
+code\Code\.venv\Lib\site-pack
+ages\keras\src\saving\saving_
+api.py", line 230, in 
+save_weights
+    raise ValueError(
+ValueError: The filename 
+must end in `.weights.h5`. 
+Received: filepath=models/che
+ckpoints/pd_recommender_weigh
+ts.h5
