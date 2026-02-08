@@ -1,0 +1,10 @@
+tensorflow>=2.0.0
+transformers
+networkx
+pandas
+numpy
+streamlit
+matplotlib
+scikit-learn
+openpyxl
+plotly

@@ -1,0 +1,69 @@
+﻿./.venv/Scripts/python.exe : 
+2026-02-07 21:48:38.737417: 
+I tensorflow/core/util/port.c
+c:153] oneDNN custom 
+operations are on. You may 
+see slightly different 
+numerical results due to 
+floating-point round-off 
+errors from different 
+computation orders. To turn 
+them off, set the 
+environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+At line:1 char:1
++ ./.venv/Scripts/python.exe 
+src/train.py > 
+train_output.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (2026-02  
+  -07 21:4...ONEDNN_OPTS=0   
+ `.:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+2026-02-07 21:48:41.611504: 
+I tensorflow/core/util/port.c
+c:153] oneDNN custom 
+operations are on. You may 
+see slightly different 
+numerical results due to 
+floating-point round-off 
+errors from different 
+computation orders. To turn 
+them off, set the 
+environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call 
+last):
+  File "D:\CAPSTONE\Capstone 
+code\Code\src\train.py", 
+line 80, in <module>
+    train_model()
+  File "D:\CAPSTONE\Capstone 
+code\Code\src\train.py", 
+line 14, in train_model
+    print("\U0001f680 
+Starting PD-Genomics Model 
+Training Pipeline...")
+  File "C:\Program Files\Wind
+owsApps\PythonSoftwareFoundat
+ion.Python.3.12_3.12.2800.0_x
+64__qbz5n2kfra8p0\Lib\encodin
+gs\cp1252.py", line 19, in 
+encode
+    return codecs.charmap_enc
+ode(input,self.errors,encodin
+g_table)[0]
+           ^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't encode 
+character '\U0001f680' in 
+position 0: character maps 
+to <undefined>
